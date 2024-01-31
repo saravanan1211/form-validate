@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation in bootstarp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(221, 211, 211);">
+    <div class="container">
+        <form action="" id="form" name="formval">
+        <h1 class="mt-5" style="text-align: center; color: rgb(69, 94, 94); text-transform: capitalize;">form validation</h1>
+    </div>
+    <div class="container">
+    <div class="row mt-5 ">
+    <div class="col-md-6">
+        <label for="firstname" class="form-label" style="color: blueviolet;">first name</label>
+        <input type="text" class="form-control " id="firstname" placeholder="firstname" onclick="fname()"  required>
+        <p id="error1"></p>
+    </div>
+    <div class="col-md-6">
+        <label for="lastname" class="form-label">Last name</label>
+        <input type="text" class="form-control " id="lastname" placeholder="lastname" onclick="lname()"   required>
+        <p id="error2"></p>
+    </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="mobile" class="form-label">mobile number</label>
+            <input type="num" class="form-control " id="mobnum" placeholder="mobile number" onclick="phone()"   required>
+            <p id="error3"></p>
+        </div>
+        <div class="col-md-6">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control " id="Email" placeholder="Email" onclick="val_email()"   required>
+            <p id="error4"></p>
+        </div>
+      
+    </div>
+</div> 
+
+   <div class="container ">
+   <div class="row">
+    <div class="col-md-12 ">
+   <div class="mb-3 ">
+    <p style="font-size: 30px; margin: 30px; color: blueviolet;">address</p>
+    <textarea class="form-control " id="five" rows="3" placeholder="address" onclick="val_address()"></textarea>
+    <p id="error-9"></p>
+
+  </div>
+</div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p style="margin: 30px; font-size: 30px; text-transform: capitalize; color: blueviolet;">state</p>
+            <select class="form-select form-select-lg "  id=state  onclick="val_state()">
+                <option selected>select</option>
+                <option value="tamilnadu">tamil nadu</option>
+                <option value="kerala">kerala</option>
+                <option value="karnataka">karnataka</option>
+                <option value="andra pradesh">andra pradesh</option>
+              </select>
+        </div>
+        <p id="error-10"></p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p style="margin: 30px; font-size: 30px; text-transform: capitalize; color: blueviolet;">district</p>
+
+            <input type="text" class="form-control " id="district" placeholder="district" onclick="val_district()"   required>
+            <p id="error-11"></p>
+        </div>
+        <div class="col-md-6">
+            <p style="margin: 30px; font-size: 30px; text-transform: capitalize; color: blueviolet;">pincode</p>
+
+            <input type="text" class="form-control " id="pin" placeholder="pincode" onclick="val_pincode()"   required>
+            <p id="error-12"></p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+
+   
+
+<div class="col-md-12 d-grid mt-5">
+    <button class="btn btn-primary" type="submit" id="submitbtn">Submit</button>
+</div>
+</div>
+</div>
+  
+
+   <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
